@@ -7,12 +7,10 @@ import { TimeSplit } from './typings/global';
 import { getTwoDaysFromNow, tick } from './utils/time';
 import { useCssHandles } from 'vtex.css-handles';
 
-interface CountdownProps {}
-
 const DEFAULT_TARGET_DATE = getTwoDaysFromNow();
 const CSS_HANDLES = ['countdown']; // Define o array com os handles necessários
 
-const Countdown: StorefrontFunctionComponent<CountdownProps> = ({  }) => {
+const Countdown: StorefrontFunctionComponent = () => {
     const [ timeRemaining, setTime ] = useState<TimeSplit>({
         hours: '00',
         minutes: '00',
