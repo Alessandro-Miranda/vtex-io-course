@@ -1,0 +1,27 @@
+{
+    "store.custom#landing": {
+        "blocks": [
+            "image#landingbanner",
+            "search-result-layout.customQuery"
+        ]
+    },
+    "image#landingbanner": {
+        "props": {
+            "minWidth": "100%",
+            "src": "http://s.glbimg.com/po/tt/f/original/2011/01/10/finepix-01.jpg"
+        }
+    },
+    "search-result-layout.customQuery": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hidenUnavailableItems": true,
+                "maxItemsPerPage": 8,
+                "queryField": "Camera",
+                "mapField": "ft",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+        "blocks": ["search-result-layout.desktop"]
+    }
+}

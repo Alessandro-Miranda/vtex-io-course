@@ -1,0 +1,36 @@
+{ // Cria uma página personalizada ( neste caso, criação de uma landing page about-us)
+    "store.custom#about-us": { // define a página customizada
+        "blocks": ["flex-layout.row#about-us"]
+    },
+    "flex-layout.row#about-us": {
+        "children": [
+            "image#about-us",
+            "flex-layout.col#text-about-us"
+        ]
+    },
+    "flex-layout.col#text-about-us": {
+        "children": [
+            "rich-text#about-title",
+            "rich-text#about-content"
+        ],
+        "props": {
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#about-title": {
+        "props": {
+            "text": "# About Minimum Theme"
+        }
+    },
+    "rich-text#about-content": {
+        "props": {
+            "text": "### **Our history** \n This store was created to be used on **VTEX Training Week BRA**. You can click [here](https://learn.vtex.com/page/learning-path-lang-pt) to know more about the courses! \n ### **This is the *VTEX Minimum Theme*** \n You can use it to test blocks usage and build your first store from scratch."
+        }
+    },
+    "image#about-us": {
+        "props": {
+            "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-about-us.png",
+            "maxHeight": "600px"
+        }
+    }
+}

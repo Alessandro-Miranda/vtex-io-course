@@ -1,0 +1,112 @@
+{
+    "slider-layout#home": {
+        "children": [
+            "image#brand1",
+            "image#brand2",
+            "image#brand3",
+            "image#brand4",
+            "image#brand5",
+            "image#brand6"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 7000,
+                "stopOnHover": true
+            },
+            "showNavigationArrows": "desktopOnly",
+            "infinite": true
+        }
+    },
+    "image#brand1": {
+        "props": {
+          "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square1.png"
+        }
+    },
+    "image#brand2": {
+        "props": {
+            "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square2.png"
+        }
+    },
+    "image#brand3": {
+        "props": {
+            "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square3.png"
+        }
+    },
+    "image#brand4": {
+        "props": {
+            "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square4.png"
+        }
+    },
+    "image#brand5": {
+        "props": {
+            "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square5.png"
+        }
+    },
+    "image#brand6": {
+        "props": {
+            "src": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-brand-logo-square6.png"
+        }
+    },
+    "slider-layout#retro-mixer1": {
+        "children": [
+            "image#retro-mixer-tab1-image1",
+            "image#retro-mixer-tab1-image2"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "showNavigationArrows": "never",
+            "infinite": true,
+            "itemsPerPage": {
+              "desktop": 1
+            },
+            "fullWidth": false,
+            "blockClass": "retroMixerSlider"
+        }
+    },
+    "image#retro-mixer-tab1-image1": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658168-81041500-f2cc-11ea-9ab0-b93e53f1c00e.jpg",
+            "maxWidth": "400px"
+        }
+    },
+    "image#retro-mixer-tab1-image2": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658169-819cab80-f2cc-11ea-9323-c8df874e1920.jpg",
+            "maxWidth": "400px"
+        }
+    },
+    "slider-layout#retro-mixer2": {
+        "children": [
+            "image#retro-mixer-tab2-image1",
+            "image#retro-mixer-tab2-image2"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "showNavigationArrows": "never",
+            "infinite": true,
+            "itemsPerPage": {
+            "desktop": 1
+            },
+            "fullWidth": false,
+            "blockClass": "retroMixerSlider"
+        }
+    },
+    "image#retro-mixer-tab2-image1": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658172-82354200-f2cc-11ea-92e5-f3aa3439a676.jpg",
+            "maxWidth": "400px"
+        }
+    },
+    "image#retro-mixer-tab2-image2": {
+        "props": {
+            "src": "https://user-images.githubusercontent.com/43679629/92658175-82354200-f2cc-11ea-967d-0e54579edb90.jpg",
+            "maxWidth": "400px"
+        }
+    }
+}

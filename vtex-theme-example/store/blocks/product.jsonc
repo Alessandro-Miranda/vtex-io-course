@@ -1,0 +1,120 @@
+{
+  "store.product": {
+    "children": [
+      // "condition-layout.product",
+      "breadcrumb",
+      "flex-layout.row#main",
+      "condition-layout.product"
+    ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [ // indica os filhso que a coluna da esquerda tem
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right": {
+    "children": [ // indica os filhos que a coluna da direita tem
+      "product-name",
+      "product-identifier.product",
+      "product-price",
+      "flex-layout.row#qty-sku",
+      "shipping-simulator",
+      "countdown",
+      "buy-button"
+    ],
+    "props": {
+      "preventVerticalStretch": true, // Alinha a coluna da direita ao meio
+      "verticalAlign": "middle",
+      "marginLeft": 6
+    }
+  },
+  "flex-layout.row#qty-sku": {
+    "children": [
+      "sku-selector",
+      "product-quantity"
+    ]
+  },
+  "product-images": {
+    "props": {
+        "zoomMode": "in-place-hover"
+    }
+  },
+  "product-price": {
+    "props": {
+        "showSavings": true, // Mostra o valor economizado
+        "showListPrice": true // mostra a listra de preço
+    }
+  },
+  "condition-layout.product": {
+    "children": [
+      "condition.product#retro-mixer"
+    ]
+  },
+  "condition.product#retro-mixer": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "verb": "is",
+          "object": "3"
+        }
+      ]
+    },
+    "children": ["tab-layout#retro-mixer"]
+  },
+  "tab-layout#retro-mixer": {
+    "children": [
+      "tab-list#retro-mixer",
+      "tab-content#retro-mixer"
+    ]
+  },
+  "tab-list#retro-mixer": {
+    "children": [
+      "tab-list.item#retro-mixer1",
+      "tab-list.item#retro-mixer2"
+    ],
+    "props": {
+      "blockClass": "retroMixerTab"
+    }
+  },
+  "tab-list.item#retro-mixer1": {
+    "props": {
+      "tabId": "fotos1",
+      "label": "Fotos conceituais de itens de cozinha",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#retro-mixer2": {
+    "props": {
+      "tabId": "fotos2",
+      "label": "Mais fotos conceituais de itens de cozinha"
+    }
+  },
+  "tab-content#retro-mixer": {
+    "children": [
+      "tab-content.item#retro-mixer1",
+      "tab-content.item#retro-mixer2"
+    ]
+  },
+  "tab-content.item#retro-mixer1": {
+    "props": {
+      "tabId": "fotos1"
+    },
+    "children": ["slider-layout#retro-mixer1"]
+  },
+  "tab-content.item#retro-mixer2": {
+    "props": {
+      "tabId": "fotos2"
+    },
+    "children": ["slider-layout#retro-mixer2"]
+  }
+}
