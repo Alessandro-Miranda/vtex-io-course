@@ -1,8 +1,6 @@
 {
   "store.home": { 
     "blocks": [
-      "countdown",
-      "countdown.title",
       "stack-layout#cta", // define o estilo de pilha
       "tab-layout#home", // declara o bloco de layout de abas no bloco desejado
       "rich-text",
